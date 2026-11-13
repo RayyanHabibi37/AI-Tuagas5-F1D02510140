@@ -1,0 +1,31 @@
+Diagnosa penyakit ikan cupang
+Jawab y/t.
+1. Apakah air akuarium keruh atau berbau atau kadar amonia tinggi? (y/t) > t
+2. Apakah wadah kotor atau sisa pakan menumpuk? (y/t) > t
+3. Apakah kepadatan ikan dalam wadah terlalu tinggi? (y/t) > t
+4. Apakah ikan tampak lesu atau kurang aktif? (y/t) > y
+5. Apakah sirip ikan menguncup rapat ke badan? (y/t) > t
+6. Apakah nafsu makan ikan menurun? (y/t) > t
+7. Apakah ikan menggosokkan badan ke dekorasi atau dasar wadah? (y/t) > t
+8. Apakah ikan bernapas cepat atau megap-megap di permukaan? (y/t) > t
+9. Apakah ikan mengeluarkan lendir berlebih? (y/t) > t
+10. Apakah ada bintik putih seperti butir garam di badan atau sirip? (y/t) > y
+11. Apakah ada serbuk keemasan halus di badan? (y/t) > t
+12. Apakah ada luka atau lapisan putih berlendir seperti kapas di kulit, mulut, atau sirip? (y/t) > t
+
+Fakta awal: ikan tampak lesu atau kurang aktif, ada bintik putih seperti butir garam di badan atau sirip
+
+Siklus 1: R2 -> kondisi ikan lemah
+Siklus 2: R4 -> penyakit bintik putih (Ich)
+Siklus 3: tidak ada aturan baru, berhenti
+
+Kesimpulan: penyakit bintik putih (Ich)
+Alasan:
+  penyakit bintik putih (Ich) <- R4 (ada bintik putih seperti butir garam di badan atau sirip; kondisi ikan lemah) [sumber S1, S2]
+    kondisi ikan lemah <- R2 (ikan tampak lesu atau kurang aktif) [sumber S2]
+
+Sumber yang dipakai:
+  S2: Parasitic Diseases of Fish (Aquarium Fishes), Merck Veterinary Manual, https://www.merckvetmanual.com/exotic-and-laboratory-animals/aquarium-fishes/parasitic-diseases-of-fish, diakses 13 Nov 2026
+  S1: Ichthyophthirius multifiliis (White Spot) Infections in Fish, UF/IFAS Extension (EDIS), University of Florida, https://edis.ifas.ufl.edu/publication/FA006/pdf, diakses 13 Nov 2026
+
+Catatan: Aturan berasal dari 2 institusi (UF/IFAS Extension dan Merck Veterinary Manual) tentang ikan air tawar dan ikan hias akuarium secara umum, bukan khusus ikan cupang (Betta splendens), dan hanya mencakup 4 dugaan: bintik putih (Ich), beludru (velvet), infeksi bakteri kulit/insang, dan parasit Trichodina. Hasilnya saran awal, bukan keputusan akhir; kepastian butuh pemeriksaan mikroskop oleh dokter hewan ikan.

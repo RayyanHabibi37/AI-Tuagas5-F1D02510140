@@ -1,0 +1,18 @@
+{
+  "judul": "Diagnosa penyakit ikan cupang",
+  "batas": "Aturan berasal dari 2 institusi (UF/IFAS Extension dan Merck Veterinary Manual) tentang ikan air tawar dan ikan hias akuarium secara umum, bukan khusus ikan cupang (Betta splendens), dan hanya mencakup 4 dugaan: bintik putih (Ich), beludru (velvet), infeksi bakteri kulit/insang, dan parasit Trichodina. Hasilnya saran awal, bukan keputusan akhir; kepastian butuh pemeriksaan mikroskop oleh dokter hewan ikan.",
+  "sumber": {
+    "S1": "Ichthyophthirius multifiliis (White Spot) Infections in Fish, UF/IFAS Extension (EDIS), University of Florida, https://edis.ifas.ufl.edu/publication/FA006/pdf, diakses 13 Nov 2026",
+    "S2": "Parasitic Diseases of Fish (Aquarium Fishes), Merck Veterinary Manual, https://www.merckvetmanual.com/exotic-and-laboratory-animals/aquarium-fishes/parasitic-diseases-of-fish, diakses 13 Nov 2026",
+    "S3": "Common Bacterial Pathogens (Aeromonas, Vibrio, and Edwardsiella) in Aquaculture, Merck Veterinary Manual, https://www.merckvetmanual.com/veterinary/exotic-and-laboratory-animals/aquaculture/bacterial-diseases-in-aquaculture, diakses 13 Nov 2026"
+  },
+  "aturan": [
+    {"id": "R1", "jika": ["air akuarium keruh atau berbau atau kadar amonia tinggi", "wadah kotor atau sisa pakan menumpuk", "kepadatan ikan dalam wadah terlalu tinggi"], "mode": "atau", "maka": "beban organik tinggi", "sumber": ["S2", "S3"]},
+    {"id": "R2", "jika": ["ikan tampak lesu atau kurang aktif", "sirip ikan menguncup rapat ke badan", "nafsu makan ikan menurun"], "mode": "atau", "maka": "kondisi ikan lemah", "sumber": ["S2"]},
+    {"id": "R3", "jika": ["ikan menggosokkan badan ke dekorasi atau dasar wadah", "ikan bernapas cepat atau megap-megap di permukaan", "ikan mengeluarkan lendir berlebih"], "mode": "atau", "maka": "iritasi kulit atau insang", "sumber": ["S2"]},
+    {"id": "R4", "jika": ["ada bintik putih seperti butir garam di badan atau sirip", "kondisi ikan lemah"], "mode": "dan", "maka": "penyakit bintik putih (Ich)", "sumber": ["S1", "S2"]},
+    {"id": "R5", "jika": ["ada serbuk keemasan halus di badan", "iritasi kulit atau insang"], "mode": "dan", "maka": "penyakit beludru (velvet)", "sumber": ["S2"]},
+    {"id": "R6", "jika": ["ada luka atau lapisan putih berlendir seperti kapas di kulit, mulut, atau sirip", "beban organik tinggi"], "mode": "dan", "maka": "infeksi bakteri kulit atau insang (dugaan columnaris)", "sumber": ["S3"]},
+    {"id": "R7", "jika": ["iritasi kulit atau insang", "beban organik tinggi"], "mode": "dan", "maka": "infestasi parasit Trichodina akibat sanitasi buruk (dugaan)", "sumber": ["S2"]}
+  ]
+}
